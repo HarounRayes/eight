@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-ibm-regular: var(--font-ibm-regular);
+  --font-ibm-medium: var(--font-ibm-medium);
+  --font-ibm-semibold: var(--font-ibm-semibold);
+  --font-ibm-bold: var(--font-ibm-bold);
+  --font-ibm-thin: var(--font-ibm-thin);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-ibm-regular), sans-serif;
+}
+
+.ibm-thin {
+  font-family: var(--font-ibm-thin), sans-serif !important;
+}
+
+.ibm-regular {
+  font-family: var(--font-ibm-regular), sans-serif;
+}
+
+.ibm-bold {
+  font-family: var(--font-ibm-bold), sans-serif;
+}
+
+.ibm-medium {
+  font-family: var(--font-ibm-medium), sans-serif;
+}
+
+.ibm-semibold {
+  font-family: var(--font-ibm-semibold), sans-serif;
+}
